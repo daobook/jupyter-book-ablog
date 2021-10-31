@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xinetzone \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-26 21:08+0800\n"
+"POT-Creation-Date: 2021-11-01 02:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,16 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../index.rst:5
-msgid "上善若水"
-msgstr "Sanstyle"
+msgid "关于"
+msgstr ""
 
-#: ../../index.rst:25
-#, fuzzy
-msgid "更多信息见：:ref:`about`。"
-msgstr "For more information see :ref:`about`"
+#~ msgid "The world wants to know more about you."
+#~ msgstr "全世界都想更多地了解你。"
 
-#: ../../index.rst:27
-msgid "以下是最近的帖子列表："
-msgstr "The following is a list of recent posts:"
+#~ msgid "关于我"
+#~ msgstr ""
 

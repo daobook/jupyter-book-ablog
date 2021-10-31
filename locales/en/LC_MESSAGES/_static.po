@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2021, Xinwei Liu
-# This file is distributed under the same license as the xinetzone package.
+# Copyright (C) 2021
+# This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: xinetzone \n"
+"Project-Id-Version: Python \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-24 23:40+0800\n"
+"POT-Creation-Date: 2021-11-01 02:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../about.rst:4
-msgid "关于我"
-msgstr "About Xinwei Liu"
+msgid "w3css-blogs"
+msgstr ""
+
+msgid "来源：[w3.css](https://www.w3schools.com/w3css/)"
+msgstr ""
+
+msgid "xin-css"
+msgstr ""
 

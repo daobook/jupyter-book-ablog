@@ -1,0 +1,42 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Python \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-01 02:24+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+msgid "Sphinx 国际化"
+msgstr ""
+
+msgid "直接使用 {github}`xinetzone/sphinx-intl-deploy` 模板，可以提高 Sphinx 文档的翻译效率。"
+msgstr ""
+
+msgid "使用方法"
+msgstr ""
+
+msgid ""
+"fork {github}`xinetzone/sphinx-intl-deploy` 项目，或者点击 {guilabel}`Use this "
+"template` 使用模板。为了方便描述，记此新项目为 `AA`。"
+msgstr ""
+
+msgid "将已经制作好的本地化文件夹 `locales/` 替换项目 `AA` 的文件夹 `locales/`。"
+msgstr ""
+
+msgid "修改文件  {file}`.github/workflows/deploy.yml` 以匹配项目 `AA`。"
+msgstr ""
+
+msgid ""
+"关于如何制作本地化的文件夹 `locales/`，可以参考已经翻译的网站：{xinetzone}`sphinx-intl-deploy/zh-"
+"CN`。"
+msgstr ""
+
+msgid "Python"
+msgstr ""
+

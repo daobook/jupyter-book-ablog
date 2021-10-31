@@ -1,5 +1,6 @@
-Sphinx>=4.2
-sphinx-book-theme
+jupyter-book
+sphinxcontrib-websupport
 sphinx-intl
-ablog
-graphviz
+sphinx-click
+sphinx-inline-tabs
+sphinx-proof

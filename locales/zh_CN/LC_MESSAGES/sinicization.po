@@ -1,0 +1,63 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Python \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-01 02:24+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+msgid "中国化"
+msgstr ""
+
+msgid "各种优质资源的中国化。"
+msgstr ""
+
+msgid "PyPA"
+msgstr ""
+
+msgid ""
+"PyPA 发布了 [Python 打包用户指南](https://packaging.python.org)，它是 "
+"**关于如何使用工具打包、发布和安装 Python "
+"项目的权威资源**。用户指南提供了一个关于打包的用户介绍，并解释了如何使用这些工具。如果你需要将 Python 与其它语言打包（例如，在科学 "
+"Python 包中），用户指南还提供了关于可用的第三方打包选项 （例如，[conda-forge](https://conda-"
+"forge.org/)）的基本信息和链接。"
+msgstr ""
+
+msgid "{daobook}`pypa.io`"
+msgstr ""
+
+msgid "在 {github}`daobook/pypa.io` 维护了 {github}`pypa/pypa.io` 中文版本。"
+msgstr ""
+
+msgid "`sphinx-rtd-theme`"
+msgstr ""
+
+msgid ""
+"{github}`sphinx-rtd-theme <readthedocs/sphinx_rtd_theme>` "
+"主题的设计是为了给予文档用户在桌面和移动设备上有良好体验。该主题通常用于 Read the Docs 项目，但也可以用于任何 Sphinx 项目。"
+msgstr ""
+
+msgid "{daobook}`sphinx_rtd_theme/zh-CN`"
+msgstr ""
+
+msgid "{daobook}`#` 工作是："
+msgstr ""
+
+msgid ""
+"{github}`daobook/sphinx_rtd_theme`：fork 项目 "
+"{github}`readthedocs/sphinx_rtd_theme`，并基于 `master` 切出分支 `develop` "
+"用于中国化；同时部署到 `gh-pages` 分支，实现 {daobook}`中 <sphinx_rtd_theme/zh-"
+"CN>`/{daobook}`英 <sphinx_rtd_theme>` 双语版本的文档。"
+msgstr ""
+
+msgid ""
+"{github}`daobook/sphinx_rtd_theme-locale`：托管了 "
+"{github}`daobook/sphinx_rtd_theme` 的汉化文件 `locale/`。"
+msgstr ""
+

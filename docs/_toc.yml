@@ -1,0 +1,22 @@
+format: jb-book
+root: index
+parts:
+- caption: 编程
+  chapters:
+    - file: python/index
+      sections:
+      - glob: python/**
+
+- caption: 学习
+  chapters:
+    - file: sinicization/index
+      sections:
+      - glob: sinicization/**
+
+- caption: 大杂烩
+  chapters:
+    - file: posts/index
+    - file: about
+    - file: drafts/index
+      sections:
+      - glob: drafts/**

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xinetzone 0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-31 23:09+0800\n"
+"POT-Creation-Date: 2021-11-01 02:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,27 +17,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../drafts/index.rst:3
 msgid "缓存区"
 msgstr ""
 
-#: ../../drafts/index.rst:5
 msgid "有待探讨的 Python 模块："
 msgstr ""
 
-#: ../../drafts/index.rst:7
 msgid "`feedgen`__"
 msgstr ""
 
-#: ../../drafts/index.rst:8
 msgid "`Invoke`__"
 msgstr ""
 
-#: ../../drafts/index.rst:9
 msgid "`Jinja`__"
 msgstr ""
 
-#: ../../drafts/index.rst:15
 msgid ""
 "python setup.py extract_messages -o ablog/locales/sphinx.pot python "
 "setup.py init_catalog -l zh_CN -i ablog/locales/sphinx.pot -o "
@@ -46,9 +40,30 @@ msgid ""
 "ablog/locales/zh_CN/LC_MESSAGES/sphinx.po"
 msgstr ""
 
-#: ../../drafts/index.rst:19
 msgid ""
 "python setup.py compile_catalog --directory ablog/locales/ --domain "
 "sphinx --locale zh_CN"
+msgstr ""
+
+msgid "在你的markdown文件中执行代码"
+msgstr ""
+
+msgid ""
+"如果你想在这些 markdown 文件中加入计算内容。你可以使用 MyST Markdown "
+"来定义单元，这些单元将在你的书构建时执行。Jupyter Book 使用 *jupytext* 来做这个。"
+msgstr ""
+
+msgid "首先，向文件添加 Jupytext 元数据。例如，要将 Jupytext 元数据添加到这个 markdown 页面，运行这个命令："
+msgstr ""
+
+msgid "一旦一个 markdown 文件中包含了 Jupytext 元数据，你就可以在构建时添加以下指令来运行该代码："
+msgstr ""
+
+msgid "当你的书被构建时，任何 `{code-cell}` 块的内容都会被你的默认 Jupyter 内核执行，其输出将与你的其他内容一起显示。"
+msgstr ""
+
+msgid ""
+"关于用 Jupyter Book 执行计算内容的更多信息。见 [MyST-NB文档](https://myst-"
+"nb.readthedocs.io/)。"
 msgstr ""
 
