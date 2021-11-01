@@ -4,3 +4,4 @@ sphinx-intl
 sphinx-click
 sphinx-inline-tabs
 sphinx-proof
+ablog
