@@ -7,9 +7,7 @@ logo: logo.jpg
 email: xinzone@outlook.com
 
 exclude_patterns:
-  [_build/, Thumbs.db, .DS_Store,
-   "**.ipynb_checkpoints", .github/,
-   _static/**]
+  [_build/, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", _static/**]
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -46,9 +44,9 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/daobook/daobook.github.io  # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: main  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/daobook/daobook.github.io # Online location of your book
+  path_to_book: docs # Optional path to your book, relative to the repository root
+  branch: main # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
@@ -97,13 +95,13 @@ html:
 
 parse:
   myst_substitutions:
-      lxw: 刘新伟
+    lxw: 刘新伟
   myst_enable_extensions: # 在 myst 解析器中启用的默认扩展。参考 https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
     - amsmath # 启用解析 LaTeX 样式的数学块
     - colon_fence # 启用 ::: 防护栅栏，以便使其更易于在不支持 MyST 的界面中呈现
     - deflist # 启用定义清单
     - dollarmath # 为数学块支持 $$ 和 $ 语法
-    - html_admonition  # 启用纯定义的 HTML 的提示
+    - html_admonition # 启用纯定义的 HTML 的提示
     - html_image # 启用解析原始 HTML 图像
     - linkify # 自动检测 Markdown 中类似 HTML 的链接并将其转换为超链接
     - replacements
@@ -111,15 +109,22 @@ parse:
     - substitution # 为了允许您定义 Markdown “变量”并在使用它们时置换文本
   myst_url_schemes: [mailto, http, https] # 在 Markdown 链接中将被识别为外部 URL 的 URI 方案
 
-
 #######################################################################################
 # Advanced and power-user settings
 sphinx:
   local_extensions: # A list of local extensions to load by sphinx specified by "name: path" items
-  config: 
+  extra_extensions:
+    - sphinx_click.ext
+    - sphinx_inline_tabs
+    - sphinx.ext.extlinks
+    - sphinx.ext.intersphinx
+    - sphinx_proof
+    - ablog
+  
+  config:
     html_show_copyright: false
     # 支持 国际化
-    locale_dirs: ['../locales/']
+    locale_dirs: ["../locales/"]
     gettext_location: false
     nb_render_priority:
       gettext: {}
@@ -127,32 +132,32 @@ sphinx:
       .Rmd:
         - jupytext.reads
         - fmt: Rmd
-    bibtex_reference_style: author_year  # or label, super, \supercite
-    # TODO: #917 this path will be the default in sphinx v4
-    # mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-    # However, it is incompatible with the mathjax config below for macros
-    mathjax3_config:
-      TeX:
-        Macros:
-          "N": "\\mathbb{N}"
-          "floor": ["\\lfloor#1\\rfloor", 1]
-          "bmat": ["\\left[\\begin{array}"]
-          "emat": ["\\end{array}\\right]"]
-    latex_elements:
-        preamble: |
-          \newcommand\N{\mathbb{N}}
-          \newcommand\floor[1]{\lfloor#1\rfloor}
-          \newcommand{\bmat}{\left[\begin{array}}
-          \newcommand{\emat}{\end{array}\right]}
+    bibtex_reference_style: author_year # or label, super, \supercite
+    # # TODO: #917 this path will be the default in sphinx v4
+    # # mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    # # However, it is incompatible with the mathjax config below for macros
+    # mathjax3_config:
+    #   TeX:
+    #     Macros:
+    #       "N": "\\mathbb{N}"
+    #       "floor": ["\\lfloor#1\\rfloor", 1]
+    #       "bmat": ["\\left[\\begin{array}"]
+    #       "emat": ["\\end{array}\\right]"]
+    # latex_elements:
+    #   preamble: |
+    #     \newcommand\N{\mathbb{N}}
+    #     \newcommand\floor[1]{\lfloor#1\rfloor}
+    #     \newcommand{\bmat}{\left[\begin{array}}
+    #     \newcommand{\emat}{\end{array}\right]}
     intersphinx_mapping:
-      pypug: 
+      pypug:
         - "https://packaging.python.org/"
         - null
     #   wiki:
     #     - "https://xinetzone.github.io/wiki/"
     #     - null
     # https://www.w3schools.com/tags/ref_language_codes.asp
-    language: zh_CN 
+    
     extlinks:
       xinetzone:
         - "https://xinetzone.github.io/%s"
@@ -170,10 +175,59 @@ sphinx:
         - "https://github.com/readthedocs/%s"
         - ""
 
-  extra_extensions:
-    - sphinx_click.ext
-    - sphinx_inline_tabs
-    - sphinx.ext.extlinks
-    - sphinx.ext.intersphinx
-    - sphinx_proof
-    - ablog
+    # ========== ABlog 配置 ============================================================
+      
+    # --    博客作者、语言和位置 -------------------------------------------------
+
+    # 一个作者名字的字典，映射到作者的完整显示名称和链接。
+    # 字典的键值应该在 ``post`` 指令中使用，以指代作者。默认是 ``{}``。
+    blog_authors:
+      lxw:
+        - "刘新伟"
+        - null
+    blog_path: "posts"
+    blog_post_pattern: "posts/*.md"
+    blog_baseurl: "https://daobook.github.io"
+    fontawesome_included: True
+    post_auto_image: 1
+    post_auto_excerpt: 2
+
+    # 语言代码名称的字典，映射到这些语言的完整显示名称和链接。
+    # 类似于 :confval:`blog_authors`，
+    # 字典的键应该在 `post` 指令中使用，以指代位置。默认是 `{}`。
+    blog_languages:
+      zh:
+        - Chinese
+        - null
+      en:
+        - English
+        - null
+            
+    # 默认作者的名字
+    blog_default_author: "lxw"
+    # 默认语言的代码名称
+    blog_default_language: zh
+    # 在 blog_locations 中定义的默认位置的名称。
+    # blog_default_location = None
+
+    # -- 博客帖子相关 --------------------------------------------------------
+
+    # 帖子的日期格式。默认 ``'%b %d, %Y'``
+    #  ``datetime.date.strftime()`` 的参数
+    post_date_format: "%c"
+    post_date_format_short: "%b %d, %Y"
+
+    html_sidebars:
+      "posts/**": [
+          "sidebar-logo.html",
+          "search-field.html",
+          "postcard.html",
+          "recentposts.html",
+          "tagcloud.html",
+          "categories.html",
+          "archives.html",
+          "sbt-sidebar-nav.html",
+          "sbt-sidebar-footer.html",
+      ]
+
+    language: zh_CN

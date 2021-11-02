@@ -1,8 +1,7 @@
-.. post:: Oct 24, 2021
+.. post:: Oct 24, 2021 20:00
    :tags: ABlog
    :author: lxw
    :category: 手册
-   :language: zh
 
 ============
 ABlog 简介
